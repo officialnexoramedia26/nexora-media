@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>넥소라 미디어 | 공식 홈페이지</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#38bdf8;
+    color:#0f172a;
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:100px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    color:#cbd5e1;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">NEXORA MEDIA</div>
+
+<ul>
+<li><a href="#about">소개</a></li>
+<li><a href="#services">서비스</a></li>
+<li><a href="#contact">문의</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h1>넥소라 미디어</h1>
+
+<p>
+창의적인 콘텐츠와 디지털 혁신을 통해
+새로운 가치를 만드는 미디어 플랫폼입니다.
+</p>
+
+<a href="#services" class="btn">서비스 보기</a>
+</section>
+
+<section id="about">
+<div class="container">
+<h2 class="section-title">회사 소개</h2>
+
+<div class="about">
+<p>
+넥소라 미디어는 디지털 콘텐츠 제작,
+브랜드 마케팅, 웹 솔루션 개발을 중심으로
+성장하는 차세대 미디어 기업입니다.
+
+우리는 창의성과 기술을 결합하여
+기업과 개인의 온라인 경쟁력을 높이는 데 집중합니다.
+</p>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<h2 class="section-title">서비스</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>콘텐츠 제작</h3>
+<p>
+영상, 이미지, SNS 콘텐츠를 전문적으로 제작합니다.
+</p>
+</div>
+
+<div class="card">
+<h3>브랜드 마케팅</h3>
+<p>
+온라인 브랜드 성장 전략을 제공합니다.
+</p>
+</div>
+
+<div class="card">
+<h3>웹사이트 개발</h3>
+<p>
+기업 홈페이지와 랜딩페이지를 제작합니다.
+</p>
+</div>
+
+<div class="card">
+<h3>디지털 솔루션</h3>
+<p>
+비즈니스 성장에 필요한 디지털 서비스를 제공합니다.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact">
+<h2 class="section-title">문의하기</h2>
+
+<p>협업 및 문의는 아래 이메일로 연락해 주세요.</p>
+
+<br>
+
+<a href="mailto:contact@nexoramedia.com">
+contact@nexoramedia.com
+</a>
+</div>
+</section>
+
+<footer>
+© 2026 NEXORA MEDIA. All Rights Reserved.
+</footer>
+
+</body>
+</html>
